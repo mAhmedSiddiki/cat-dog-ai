@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cat and Dog Classification - GDCL - Marjuk Ahmed Siddiki</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="static/assets/css/bootstrap.min.css">
+        <link href="static/assets/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="static/assets/owl-carousel/owl.carousel.css">
+         
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="static/assets/owl-carousel/owl.theme.css">
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="static/assets/css/main.css">
+
+        <script src="static/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+
+
+
+        <style>
+            .upload {
+                font-size: 15px;
+                background-color: rgb(255, 252, 252);
+                border-radius: 30px;
+                outline: none;
+                width: 300px;
+                color: rgb(0, 0, 0);
+                border: 2px solid #80d8ca;
+            }
+        
+            .upload:hover {
+                font-size: 15px;
+                background-color: #00927a;
+                border-radius: 30px;
+                outline: none;
+                width: 300px;
+                color: rgb(255, 255, 255);
+                border: 2px solid #80d8ca;
+            }
+        
+            ::-webkit-file-upload-button {
+                color: white;
+                padding: 10px;
+                border: 2px solid #80d8ca;
+                background-color: #80d8ca;
+                border-radius: 30px;
+            }
+        
+            ::-webkit-file-upload-button:hover {
+                border-radius: 30px;
+                background-color: #ffffff;
+                color: #80d8ca;
+            }
+        
+            .submitt{
+                padding: 5px 10px;
+                background-color: white;
+                border-radius: 30px;
+                color: black;
+                font-size: 20px;
+                border-color: #80d8ca;
+            }
+        
+            .submitt:hover{
+              background-color: #80d8ca;
+              color:aliceblue;
+                padding: 5px 10px;
+                border-radius: 30px;
+                font-size: 20px;
+                border-color: #80d8ca;
+            }
+        
+        </style>
+    </head>
+
+
+    <body>
+        <div id="top" class="navbar navbar-dark navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+                    <a class="navbar-brand" href="#"><strong>Cat & Dog </strong>AI System</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="carousel-header" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="camera-icon hidden-sm hidden-xs">
+                    <!-- <div class="circle"> -->
+                        <!-- <div class="hexagon"> -->
+                            <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+                                <div class="row justify-content-center">
+                                  <div>
+                                    <center><input type="file" name="image" class="upload"></center>
+                                  </div>
+                                </div><br>
+                                <div class="row justify-content-center">
+                                  <div>
+                                    <center><input class="submitt" type="submit" value="Upload"></center>
+                                  </div>
+                                </div> 
+                              </form>
+                        <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+
+                <div class="item active">
+                    <img src="static/assets/img/slide1.jpg" alt="">
+                </div>
+
+                <div class="item">
+                    <img src="static/assets/img/slide2.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-header" role="button" data-slide="next">
+                <img src="static/assets/img/left.png" alt="Previous">
+            </a>
+            <a class="right carousel-control" href="#carousel-header" role="button" data-slide="next">
+                <img src="static/assets/img/right.png" alt="Next">
+            </a>
+        </div>
+
+
+
+
+        <div id="about" class="content-block content-block-cyan">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h1>Cat and Dog - Classification</h1>
+                        <p>
+                            <h4>It is an artificial intelligence system, where the system itself will recognize whether the picture you give is a cat or a dog.</h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="social" class="content-block">
+            <div class="container text-center">
+                <div class="hexagon"><a target="_blank" href="https://www.facebook.com/GDCLEducation"><i class="fa fa-facebook"></i></a></div>
+            </div>
+        </div>
+
+
+        <footer class="content-block content-block-dark">
+            <p>&copy; Copyright <a href="https://gdcleducation.com/" target="_blank">GDCL Education</a>. Create By: Marjuk Ahmed Siddiki</p>
+        </footer>     
+
+        <script src="static/assets/js/jquery-2.1.3.min.js"></script>
+        <script>window.jQuery || document.write('<script src="static/assets/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="static/assets/js/vendor/bootstrap.min.js"></script>
+        <!-- Include js plugin -->
+        <script src="static/assets/owl-carousel/owl.carousel.js"></script>
+
+        <script src="static/assets/js/main.js"></script>
+
+    </body>
+</html>
