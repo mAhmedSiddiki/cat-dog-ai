@@ -98,28 +98,41 @@
 
 
 
+        
+
+
+
+
+        <div id="about" class="content-block content-block-cyan">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h1>Cat and Dog - Classification</h1>
+                        <p>
+                            <h4>It is an artificial intelligence system, where the system itself will recognize whether the picture you give is a cat or a dog.</h4>
+                        </p>
+                    </div>
+                </div><br><br>
+
+                <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+                    <div class="row justify-content-center">
+                      <div>
+                        <center><input type="file" name="image" class="upload"></center>
+                      </div>
+                    </div><br>
+                    <div class="row justify-content-center">
+                      <div>
+                        <center><input class="submitt" type="submit" value="Upload"></center>
+                      </div>
+                    </div> 
+                </form>
+            </div>
+        </div>
+
         <div id="carousel-header" class="carousel slide" data-ride="carousel" data-interval="5000">
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="camera-icon hidden-sm hidden-xs">
-                    <!-- <div class="circle"> -->
-                        <!-- <div class="hexagon"> -->
-                            <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
-                                <div class="row justify-content-center">
-                                  <div>
-                                    <center><input type="file" name="image" class="upload"></center>
-                                  </div>
-                                </div><br>
-                                <div class="row justify-content-center">
-                                  <div>
-                                    <center><input class="submitt" type="submit" value="Upload"></center>
-                                  </div>
-                                </div> 
-                              </form>
-                        <!-- </div> -->
-                    <!-- </div> -->
-                </div>
 
                 <div class="item active">
                     <img src="static/assets/img/slide1.jpg" alt="">
@@ -137,22 +150,6 @@
             <a class="right carousel-control" href="#carousel-header" role="button" data-slide="next">
                 <img src="static/assets/img/right.png" alt="Next">
             </a>
-        </div>
-
-
-
-
-        <div id="about" class="content-block content-block-cyan">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <h1>Cat and Dog - Classification</h1>
-                        <p>
-                            <h4>It is an artificial intelligence system, where the system itself will recognize whether the picture you give is a cat or a dog.</h4>
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <div id="social" class="content-block">
